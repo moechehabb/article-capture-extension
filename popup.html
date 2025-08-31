@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Article Tracker</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 10px;
+      width: 320px;
+    }
+    #metadata, #saved-articles {
+      font-size: 14px;
+      white-space: pre-wrap;
+      margin-bottom: 10px;
+    }
+    button {
+      padding: 6px 10px;
+      margin-right: 5px;
+      margin-bottom: 10px;
+    }
+    #status {
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Current Article</h2>
+  <div id="metadata">Loading...</div>
+  <button id="saveBtn">Save to Database</button>
+  <div id="status"></div>
+
+  <hr />
+  <h3>Saved Articles (Local)</h3>
+  <div id="saved-articles">Loading...</div>
+  <button id="retryBtn">Retry Sync</button>
+
+  <script src="popup.js"></script>
+</body>
+</html>
+
